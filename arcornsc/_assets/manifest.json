@@ -1,0 +1,16 @@
+{
+  "background_color": "white",
+  "description": "DenizBank İnternet Bankacılığı",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "_assets/img/appicon.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ],
+  "name": "DenizBank İnternet Bankacılığı",
+  "short_name": "DenizBank İnternet Bankacılığı",
+  "start_url": "/",
+  "scope": "/"
+}

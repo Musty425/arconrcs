@@ -1,0 +1,498 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  /* padding: 2rem; */
+  position: relative;
+}
+
+header {
+  padding: 2rem 3.2rem;
+  margin-bottom: 5.2rem;
+  /* background: #116cd0; */
+  /* background: #66c873; */
+}
+
+.header-text {
+  font-size: 2.4rem;
+}
+
+.logo {
+  height: 5.25rem;
+}
+
+.user-icon {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+/*Main Section*/
+
+main {
+  margin: 0 auto;
+  /* padding: 0 3.2rem; */
+  display: grid;
+  grid-template-columns: 4fr 1.5fr;
+  gap: 5.6rem;
+  max-width: 140rem;
+}
+
+.balance-information {
+  margin-bottom: 1.8rem;
+  background: rgb(54, 161, 139);
+  /* background-image: url(../images/images/bgbalance.svg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: auto;
+  padding: 6rem 2rem;
+  color: rgb(255, 255, 255);
+}
+.secondary-heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.date {
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.balance-amount {
+  font-size: 4.4rem;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+}
+
+/* Analysis Section */
+.analysis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.card {
+  padding: 1.6rem;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.75px;
+}
+
+.card-amount {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.card-positive {
+  border-top: 5px solid rgb(54, 161, 139);
+}
+.card-negative {
+  border-bottom: 5px solid rgb(54, 161, 139);
+}
+
+/* Operations */
+.operations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.operations-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.actions-container {
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.3rem;
+  transition: 0.5s all ease-in;
+  background-color: #f3f3f3;
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.stat {
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1.3rem;
+  transition: 0.5s all ease-in;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+}
+
+.btn-transfer {
+  background-color: rgb(54, 161, 139);
+}
+.btn-request {
+  background-color: rgb(54, 161, 139);
+}
+
+/*Transactions*/
+
+.logout-btn:link,
+.logout-btn:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #36A18B;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: inherit;
+  border-radius: 10px;
+}
+
+.logout-btn:active,
+.logout-btn:hover {
+  background-color: #aaaaaa;
+  color: #36A18B;
+}
+
+.logout-timer {
+  text-align: right;
+}
+
+
+.cls-btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cls-btn:hover {
+  background-color: #e7f5ff;
+}
+.userpoup {
+  width: auto;
+  background: white;
+  height: auto;
+  padding: 1rem;
+  /* position: fixed;
+  top: 8rem;
+  right: 2rem; */
+  z-index: 10;
+  border-radius: 5px;
+  /* display: none; */
+  /* box-shadow: -4px 6px 35px 7px rgba(221, 77, 77, 0.41) inset;
+-webkit-box-shadow: -4px 6px 35px 7px rgba(227, 26, 26, 0.41) inset;
+-moz-box-shadow: -4px 6px 35px 7px rgba(211, 33, 33, 0.41) inset; */
+margin-bottom: 3rem;
+}
+.userpoup i{
+  display: none;
+}
+.useimg img {
+  width: 100%;
+  height: auto;
+}
+.useimg {
+  width: 20%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.useinfo {
+  text-align: center;
+  font-size: 17px;
+  color: black;
+  margin: 1rem 0rem;
+}
+
+.ammnt {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.ammnt i {
+  font-size: 18px;
+  background: transparent;
+  color: #36A18B;
+  padding: 6px;
+  border-top-right-radius: 4px;
+  display: none;
+}
+.witdrrwtype-box {
+  margin-top: 3rem;
+}
+.widraw-popp {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(182, 177, 177, 0.359);
+  z-index: 10;
+  display: none;
+}
+input {
+  /* display: block; */
+  /* border: none; */
+  border: 1px solid rgb(54, 161, 139);
+  margin: 1rem 0rem;
+  /* margin-top: 1rem; */
+  padding: 9px;
+  color: black;
+  width: 100%;
+  /* margin: auto; */
+  outline-color: rgb(54, 161, 139);
+}
+label {
+  font-size: 13px;
+}
+select {
+  width: 100%;
+  display: block;
+  padding: 9px;
+}
+datalist {
+  width: 0%;
+  height: 0;
+  display: block;
+  padding: 9px;
+  
+}
+.fa-x {
+   font-size: 20px;
+   float: inline-end;
+   cursor: pointer;
+}
+.widraw-popp form {
+  width: 30%;
+  height: auto;
+  padding: 1.3rem;
+  margin: auto;
+  margin-top: 6rem;
+  background: white;
+  color: black;
+}
+.typetrans {
+  width: 100%;
+  /* margin: auto; */
+}
+.typetrans input {
+  display: inline !important;
+  width: auto !important;
+  align-items: center;
+  margin: 0 !important;
+}
+.smit {
+  background: rgb(54, 161, 139);
+  color: white;
+  border: none !important;
+  /* display: none; */
+}
+.form1-box {
+  display: none;
+}
+.form2-box {
+  display: none;
+}
+.nextbt {
+  background: rgb(54, 161, 139);
+  color: white;
+  border: none !important;
+  padding: 5px;
+  color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 2rem;
+  display: none;
+}
+.resetbtn {
+  color: #e52a5a;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+}
+.openclass{
+  display: block !important;
+}
+.closeclass {
+  display: none !important;
+}
+.usclx {
+  display: none;
+}
+.ttrss {
+  /* background-image: url(./images/images/Invest-Link-Primary-Checking.B1W94m_vWv.webp);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  font-size: 18px;
+  height: 50vh;
+  border-radius: 1rem;
+  padding:2rem 2rem;
+}
+
+/* MEDIA QUERIES */
+/* @media (max-width: 75em) {
+} */
+.bottom-navigg {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background: rgb(244, 244, 244);
+  width: 100%;
+  height: auto;
+  padding: 3rem 1.3rem;
+  z-index: 999;
+}
+
+.pending-state {
+  display: flex; align-items: center; justify-content: space-between; padding: 1rem;
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .widraw-popp form {
+    width: 40%;
+  }
+  .userpoup {
+    position: absolute;
+    top: 99px;
+    right: 10rem;
+    z-index: 10;
+    border-radius: 5px;
+    display: none;
+    margin-bottom: 3rem;
+    width: 56%;
+  }
+  .userpoup i{
+    display: block;
+  }
+  .balance-information {
+    flex-direction: column;
+  }
+  .secondary-heading {
+    text-align: center;
+  }
+  .balance-information .date {
+    text-align: center;
+  }
+  .analysis {
+    grid-template-columns: 1fr;
+    padding: 0 4.8rem;
+  }
+  .card {
+    text-align: center;
+  }
+  
+  main {
+    grid-template-columns: 1fr;
+  }
+  .operations-container {
+    justify-self: center;
+    width: 100%;
+  }
+  .operations-data {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 47em) {
+  .operations-data {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .widraw-popp form {
+    width: 65%;
+  }
+  section.containerr {
+    width: 75%;
+    margin: auto;
+}
+.bottom-navigg {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  background: rgb(244, 244, 244);
+  width: 100%;
+  height: auto;
+  padding: 1rem 1.3rem;
+  z-index: 999;
+}
+}
+
+@media (max-width: 40em) {
+  header {
+    /* flex-direction: column; */
+    gap: 4.8rem;
+  }
+  .widraw-popp form {
+    width: 90%;
+  }
+  section.containerr {
+    width: 80%;
+    margin: auto;
+}
+header {
+  padding: 0rem 3.2rem;
+  margin-bottom: 0rem;
+  gap: 4.8rem;
+}
+.ttrss {
+  /* background-image: url(./images/images/Invest-Link-Primary-Checking.B1W94m_vWv.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  height: 50vh;
+  border-radius: 1rem;
+  padding: 74px 7.8rem;
+  width: 94%;
+  margin: auto; */
+}
+}
+
+@media (max-width: 25rem) {
+  html {
+    font-size: 45%;
+  }
+  .stat {
+    flex-direction: column;
+    align-items: center;
+  }
+  .widraw-popp form {
+    width: 92%;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* 
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */

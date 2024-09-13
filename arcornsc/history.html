@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/21cf0ca2ce.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <title>Transaction history</title>
+    <style>
+        body {
+            background: #eff5fc;
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family:  sans-serif;
+        }
+
+        main {
+            width: 100%;
+            background: transparent;
+        }
+
+        section {
+            width: 50%;
+            margin: auto;
+            margin-top: 3rem;
+        }
+
+        header {
+            height: 10%;
+            background: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .side2 {
+            width: 5%;
+        }
+
+        .bbb a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        .transactions {
+            font-family: revert;
+            height: 52vh;
+            overflow-y: auto;
+            border: 1px solid #eff5fc;
+            border-radius: 5px;
+            background: white;
+            box-shadow: -4px 6px 35px 7px rgba(0, 0, 0, 0.41);
+            -webkit-box-shadow: -4px 6px 35px 7px rgba(0, 0, 0, 0.41);
+            -moz-box-shadow: -4px 6px 35px 7px rgba(0, 0, 0, 0.41);
+            padding: 1rem;
+        }
+
+        .flextts {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            color: rgb(54, 161, 139);
+            ;
+        }
+
+        .bbl {
+            color: rgb(54, 161, 139);
+            ;
+        }
+        .bottom-navigg {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            background: rgb(244, 244, 244);
+            width: 100%;
+            height: auto;
+            padding: .8rem 1rem;
+            z-index: 999;
+        }
+        @media screen and (max-width: 768px) {
+            section {
+            width: 90%;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .bottom-navigg {
+            display: block;
+            position: fixed;
+            bottom: 0;
+            background: rgb(244, 244, 244);
+            width: 100%;
+            height: auto;
+            padding: .8rem 1rem;
+            z-index: 999;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="bbb">
+                <a href="./dashboard.html">
+                    <i class="fas fa-angle-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+            <div class="side2">
+                <img src="./images/images/download.svg" alt="">
+            </div>
+        </header>
+        <section>
+            <div class="flextts">
+                <i class="fas fa-money-bill-transfer"></i>
+                <h3>Transactions</h3>
+            </div><br>
+            <div class="box-history">
+                
+                <div class="transactions ttrss">
+                    <h5>Tuesday Feb, 2024</h5>
+                    <div class="flextrs"
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="color: black;">Electronic payment/37288****4594</span>
+                            <small>16: 53pm</small>
+                        </div>
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600; text-align: end;" class="bb">-$2,680</span>
+                            <small style="color: rgb(229, 235, 47); font-size: 10px; text-align: end;">Transfer in progress, up to 1-7 days</small>
+                        </div>
+                    </div>
+                    <div class="flextrs"
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="color: black;">Amegy Bank</span>
+                            <small>16: 25pm</small>
+                        </div>
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600; text-align: end" class="bb">-$5,200</span>
+                            <small style="color: rgb(229, 235, 47); font-size: 10px; text-align: end;">Transfer in progress, up to 1-7 days</small>
+                        </div>
+                    </div>
+
+                    <h5>Monday Feb, 2024</h5>
+                    <div class="flextrs"
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="color: black;">Amegy Bank</span>
+                            <small>14: 06pm</small>
+                        </div>
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600; text-align: end;" class="bb">-$5,000</span>
+                            <small style="color: yellowgreen;">Transfer/Reversed</small>
+                        </div>
+                    </div>
+                    <h5>December 12 2023</h5>
+                    <div class="flextrs"
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="color: black;">Tpg product, sbtpg lLC...</span>
+                            <small>5: 45 PM</small>
+                        </div>
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600;" class="bbl">+$326,000</span>
+                        </div>
+                    </div>
+                    <div class="flextrs"
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="color: black;">Chevron/Chevron</span>
+                            <small>8: 23 AM</small>
+                        </div>
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600;" class="bb">-$10.80</span>
+                        </div>
+                    </div>
+                    <div class="flextrs"
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="color: black;">Visa money transfer</span>
+                            <small>11: 59 PM</small>
+                        </div>
+                        <div class="bbx1" style="display: flex; flex-direction: column;">
+                            <span style="font-weight: 600;" class="bl">-$41.32</span>
+                        </div>
+                    </div><br><br>
+
+                    <h4>September 2023</h4>
+                    <div class="transaction ttrss">
+
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Alex Johnson</span>
+                                <small>2: 13 PM</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bbl">+$321.12</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Sam Williams</span>
+                                <small>8: 19 AM</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bb">-$52.80</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Uber Black</span>
+                                <small>12: 58  PM</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bl">-$30.32</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Vilinius LT</span>
+                                <small>7: 41 PM</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bbl">-$200.12</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">International Card Fee</span>
+                                <small>2: 13 PM</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="n">-$4.12</span>
+                            </div>
+                        </div>
+                        <!-- <hr> -->
+
+                    </div>
+
+                    <h4>Recents</h4>
+                    <div class="transaction ttrss">
+
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Deposit</span>
+                                <small>Oct 28 2023</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bbl">+$46.96</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Recurring Tranfer Tway2save REF #OPO4XHJGQ</span>
+                                <small>Oct 27 2023.</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bb">-$100.00</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Purchase Hubble Conta NY</span>
+                                <small>oct 23 2023.</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bl">-$3.32</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Universal reversal Card Fee</span>
+                                <small>Oct 14 2023.</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bbl">+$26.12</span>
+                            </div>
+                        </div>
+                        <div class="flextrs"
+                            style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="color: black;">Direct deposit :REF#80602073459</span>
+                                <small>0ct 09 2023</small>
+                            </div>
+                            <div class="bbx1" style="display: flex; flex-direction: column;">
+                                <span style="font-weight: 600;" class="bbl">+2,250.00$</span>
+                            </div>
+                        </div>
+                        <!-- <hr> -->
+
+                    </div>
+                </div>
+        </section>
+        <div class="bottom-navigg">
+            <div class="flexbnav" style="display: flex; align-items: center; justify-content: space-between;">
+              <div class="iineflxnbb" style="display: flex; flex-direction: column;">
+                <i class="fas fa-dollar-sign" style="color: rgb(54, 161, 139); font-size: 1rem; margin: auto;"></i>
+                <span style="color: rgb(54, 161, 139); font-size: 1rem; margin: auto;">Account</span>
+              </div>
+              <div class="iineflxnbb" style="color: rgb(54, 161, 139); display: flex; flex-direction: column;">
+                <i class="fas fa-paper-plane" style="color: gray; font-size: 1rem; margin: auto;"></i>
+                <span style="color: gray; font-size: 1rem; margin: auto;">Transfer</span>
+              </div>
+              <div class="iineflxnbb" style="display: flex; flex-direction: column;">
+                <i class="fas fa-house-user" style="color: gray; font-size: 1rem; margin: auto;"></i>
+                <span style="color: gray; font-size: 1rem; margin: auto;">Home</span>
+              </div>
+              <div class="iineflxnbb" style="display: flex; flex-direction: column;">
+                <i class="fas fa-spinner" style="color: gray; font-size: 1rem; margin: auto;"></i>
+                <span style="color: gray; font-size: 1rem; margin: auto;">More</span>
+              </div>
+            </div>
+          </div>
+    </main>
+</body>
+
+</html>

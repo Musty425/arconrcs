@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+  margin: 3rem;
+  box-shadow: -4px 6px 35px 7px rgba(0,0,0,0.41);
+    -webkit-box-shadow: -4px 6px 35px 7px rgba(0,0,0,0.41);
+    -moz-box-shadow: -4px 6px 35px 7px rgba(0,0,0,0.41);
+    margin-bottom: 3rem;
+}
+section.containerr {
+  width: 65%;
+  margin: auto;
+}
+.whole-loan  {
+  position: absolute;
+  z-index: 10;
+  top: 5rem;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  border-color: rgba(187, 181, 181, 0.434);
+  display: none;
+}
+.smitt {
+  background: #e52a5a;
+  color: white;
+  border: none !important;
+  padding: 1rem;
+}
+
+@media (max-width: 47em) {
+  section.containerr {
+    width: 75%;
+    margin: auto;
+}
+}
+
+@media (max-width: 40em) {
+  section.containerr {
+    width: 96%;
+    margin: auto;
+}
+}
+
